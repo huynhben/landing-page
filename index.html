@@ -78,42 +78,67 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Now that you've learned a bit about me, I'd love to learn a bit about you! Please fill out the form so we can get in contact. </p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										
-										Springfield, VA 22150<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										571-294-6122
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">benhuynh46@gmail.com</a>
-									</li>
-								</ul>
-							</div>
+				<div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+					<div class="container mx-auto">
+					  <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+						<div class="text-center">
+						  <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+							Contact Us
+						  </h1>
+						  <p class="text-gray-400 dark:text-gray-400">
+							Fill up the form below to send us a message.
+						  </p>
 						</div>
-					</section>
+						<div class="m-7">
+						  <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+							<input type="hidden" name="access_key" value="95e8cedc-e71d-498e-a5fa-6cf2dce9e0e5" />
+							<input type="hidden" name="subject" value="New Submission from Web3Forms" />
+							<input type="checkbox" name="botcheck" id="" style="display: none;" />
+				  
+							<div class="flex mb-6 space-x-4">
+							  <div class="w-full md:w-1/2">
+								<label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+								<input type="text" name="name" id="first_name" placeholder="John" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+								<div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+								  
+								</div>
+							  </div>
+							  <div class="w-full md:w-1/2">
+								<label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+								<input type="text" name="last_name" id="lname" placeholder="Doe" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+								<div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+								  
+								</div>
+							  </div>
+							</div>
+				  
+							<div class="flex mb-6 space-x-4">
+							  <div class="w-full md:w-1/2">
+								<label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+								<input type="email" name="email" id="email" placeholder="Email" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+				
+							  
+							</div>
+							<div class="mb-6">
+							  <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+				  
+							  <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+							  <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+								
+							  </div>
+							</div>
+							<div class="mb-6">
+								
+								<button type="form-submit" type="submit" class="button">Submit</button>
+								
+
+							</div>
+							<p class="text-base text-center text-gray-400" id="result"></p>
+						  </form>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
 				<!-- Four -->
 				<!--
@@ -439,10 +464,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.instagram.com/benhuynh04/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/huynhben" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/huynhben/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:benhuynh46@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
